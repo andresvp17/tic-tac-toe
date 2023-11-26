@@ -1,0 +1,99 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.boardContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  place-content: center;
+  gap: 16px;
+}
+
+.cell {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border: 2px solid rgb(87, 179, 246);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.footerTitle {
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.footerElements {
+  display: flex;
+  gap: 10px;
+}
+
+.footerElements>span {
+  font-size: 35px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  background-color: rgb(87, 179, 246);
+  border-radius: 10px;
+}
+
+.winnerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.winnerSection>p {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.resetButton {
+  padding: 7px 20px;
+  background-color: rgb(87, 179, 246);
+  border: 2px solid rgb(31, 156, 245);
+  border-radius: 20px;
+  font-weight: 800;
+  color: rgb(230, 230, 230);
+  cursor: pointer;
+}
+
+.winningCells {
+  background-color: #70cc70;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
